@@ -12,7 +12,7 @@ spec:
     - Component:platform-service  
 apiVersion: "backstage.io/v1alpha1"
 metadata:
-  name: pipeline-service
+  name: Sidd-service
   description: Pipeline Service enables user to create, update and execute pipeline on Harness
   tags: [java]
   links:
