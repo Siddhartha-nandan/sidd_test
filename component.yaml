@@ -34,5 +34,6 @@ metadata:
     backstage.io/techdocs-ref: 'url:https://github.com/harness/harness-core/tree/techdocs-pl/pipeline-service/'
     github.com/project-slug: harness/harness-core
     grafana/dashboard-selector: "folderUrl == 'https://<grafana-url>/dashboards/f/9AO8k2SSk/cd-pipeline'"
+    grafana/alert-label-selector: "destination=bangalore-food"
     grafana/overview-dashboard: 'http://grafana/d/4vfKYgNIk/pipeline-health-dashboard?orgId=1'
     
