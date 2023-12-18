@@ -33,6 +33,6 @@ metadata:
     backstage.io/source-location: 'url:https://github.com/harness/harness-core/tree/develop/pipeline-service'
     backstage.io/techdocs-ref: 'url:https://github.com/harness/harness-core/tree/techdocs-pl/pipeline-service/'
     github.com/project-slug: harness/harness-core
-    grafana/dashboard-selector: "folderUrl == 'https://<grafana-url>/dashboards/f/<folder-id>/<folder-name>'"
+    grafana/dashboard-selector: "folderUrl == 'https://<grafana-url>/dashboards/f/9AO8k2SSk/cd-pipeline'"
     grafana/overview-dashboard: 'http://grafana/d/4vfKYgNIk/pipeline-health-dashboard?orgId=1'
-    grafana/alert-label-selector: "service=awesome-service"
+    
