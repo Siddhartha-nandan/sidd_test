@@ -37,5 +37,5 @@ metadata:
    #grafana/alert-label-selector: "destination=sto-prod-slack"
     grafana/overview-dashboard: 'http://grafana/d/4vfKYgNIk/pipeline-health-dashboard?orgId=1'
    # pagerduty.com/service-id: PDIL7T6
-    sonarqube.org/project-key: dashboard/functional-pipeline
+    sonarqube.org/project-key: functional-pipeline
     
