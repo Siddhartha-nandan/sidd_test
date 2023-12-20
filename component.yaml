@@ -36,6 +36,7 @@ metadata:
     grafana/dashboard-selector: "folderUrl == 'https://monitoring.harness.io/dashboards/f/9AO8k2SSk/cd-pipeline'"
    #grafana/alert-label-selector: "destination=sto-prod-slack"
     grafana/overview-dashboard: 'http://grafana/d/4vfKYgNIk/pipeline-health-dashboard?orgId=1'
-    pagerduty.com/service-id: PWCQ941
+    pagerduty.com/service-id: PQRVAD0
     sonarqube.org/project-key: functional-pipeline
+    firehydrant.com/service-name: <firehydrant-service-name>
     
