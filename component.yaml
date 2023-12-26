@@ -4,39 +4,32 @@ spec:
   type: "Service"
   lifecycle: "production"
   owner: "cdplayacc"
-  system: "pms"
+  system: "cd"
   providesApis:
-    - pipeline-service
+    - template-service
   dependsOn: 
     - Component:manager
     - Component:platform-service  
+    - Component:ng-manager
 apiVersion: "backstage.io/v1alpha1"
 metadata:
-  name: Sidd-service
-  description: Pipeline Service enables user to create, update and execute pipeline on Harness
+  name: template-service
+  description: Template service
   tags: [java]
   links:
     - title: repo
       url: https://github.com/harness/harness-core
   annotations:
-    harness.io/cd-serviceId: "pipelineservice"
-    backstage.io/kubernetes-label-selector: 'app=pipeline-service'
-    harness.io/ci-pipelineIds: PipelineServiceUBIFeatureBuild
-    harness.io/projects: FEATUREBUILDS
     harness.io/project-url: https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/ci/orgs/default/projects/FEATUREBUILDS/dashboard
     harness.io/project-url-stage: https://stage.harness.io/ng/account/wFHXHD0RRQWoO8tIZT5YVw/cd/orgs/Harness/projects/Operations/deployments
     harness.io/projects-stage: Operations,RELEASEBUILDS
-    harness.io/cd-serviceId-stage: pipelineservice
-    harness.io/ci-pipelineIds-stage: PipelineServiceUBISaaSReleaseBuild,CutPipelineServiceReleaseBranch
+    harness.io/cd-serviceId-stage: templateservice
+    harness.io/ci-pipelineIds-stage: CutTemplateServiceReleaseBranch,TemplateServiceUBISaaSReleaseBuild
     jira/project-key: CDS
-    jira/component: Pipeline
-    backstage.io/source-location: 'url:https://github.com/harness/harness-core/tree/develop/pipeline-service'
-    backstage.io/techdocs-ref: 'url:https://github.com/harness/harness-core/tree/techdocs-pl/pipeline-service/'
+    backstage.io/source-location: 'url:https://github.com/harness/harness-core/tree/develop/template-service'
+    backstage.io/techdocs-ref: 'url:https://github.com/harness/harness-core/tree/techdocs-pl/template-service/'
+    pagerduty.com/service-id: PQRVAD0
     github.com/project-slug: harness/harness-core
     grafana/dashboard-selector: "folderUrl == 'https://monitoring.harness.io/dashboards/f/9AO8k2SSk/cd-pipeline'"
-   #grafana/alert-label-selector: "destination=sto-prod-slack"
-    grafana/overview-dashboard: 'http://grafana/d/4vfKYgNIk/pipeline-health-dashboard?orgId=1'
-    pagerduty.com/service-id: PQRVAD0
-    sonarqube.org/project-key: functional-pipeline
-    firehydrant.com/service-name: <firehydrant-service-name>
-    
+    grafana/overview-dashboard: 'http://grafana/d/B42-bJq4k3/pipeline-service-http-resources-specific-observability?orgId=1&var-dataSource=ProdSetup-ManagedPrometheus&var-env=free'
+    #sonarqube.org/project-key: functional-pipeline
