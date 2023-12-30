@@ -14,7 +14,7 @@ metadata:
     - title: repo
       url: https://github.com/harness/harness-core
   annotations:
-    harness.io/cd-serviceId: "Sidd-Service"
+    harness.io/cd-serviceId: "Sidd-Service-managment"
     backstage.io/kubernetes-label-selector: 'app=manager'
     harness.io/ci-pipelineIds: OpenJdk11UBIFeatureBuildHarnessCore
     harness.io/projects: FEATUREBUILDS
