@@ -5,31 +5,24 @@ spec:
   lifecycle: "production"
   owner: "cdplayacc"
   system: "cd"
-  providesApis:
-    - template-service
-  dependsOn: 
-    - Component:manager
-    - Component:platform-service  
-    - Component:ng-manager
 apiVersion: "backstage.io/v1alpha1"
 metadata:
-  name: template-service
-  description: Template service
+  name: manager
+  description: Harness CurrentGen Manager
   tags: [java]
   links:
     - title: repo
       url: https://github.com/harness/harness-core
   annotations:
+    harness.io/cd-serviceId: "Sidd-Service"
+    backstage.io/kubernetes-label-selector: 'app=manager'
+    harness.io/ci-pipelineIds: OpenJdk11UBIFeatureBuildHarnessCore
+    harness.io/projects: FEATUREBUILDS
     harness.io/project-url: https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/ci/orgs/default/projects/FEATUREBUILDS/dashboard
     harness.io/project-url-stage: https://stage.harness.io/ng/account/wFHXHD0RRQWoO8tIZT5YVw/cd/orgs/Harness/projects/Operations/deployments
-    harness.io/projects-stage: Operations,RELEASEBUILDS
-    harness.io/cd-serviceId-stage: templateservice
-    harness.io/ci-pipelineIds-stage: CutTemplateServiceReleaseBranch,TemplateServiceUBISaaSReleaseBuild
+    harness.io/projects-stage: Operations,RELEASEMANAGEMENT
+    harness.io/cd-serviceId-stage: manager
+    harness.io/ci-pipelineIds-stage: BuildUBItargetReleaseBranchQA
     jira/project-key: CDS
-    backstage.io/source-location: 'url:https://github.com/harness/harness-core/tree/develop/template-service'
-    backstage.io/techdocs-ref: 'url:https://github.com/harness/harness-core/tree/techdocs-pl/template-service/'
-    pagerduty.com/service-id: PQRVAD0
+    pagerduty.com/service-id: P1MCPZK
     github.com/project-slug: harness/harness-core
-    grafana/dashboard-selector: "folderUrl == 'https://monitoring.harness.io/dashboards/f/9AO8k2SSk/cd-pipeline'"
-    grafana/overview-dashboard: 'http://grafana/d/B42-bJq4k3/pipeline-service-http-resources-specific-observability?orgId=1&var-dataSource=ProdSetup-ManagedPrometheus&var-env=free'
-    #sonarqube.org/project-key: functional-pipeline
