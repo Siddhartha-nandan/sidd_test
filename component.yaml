@@ -26,3 +26,11 @@ metadata:
     jira/project-key: CDS
     pagerduty.com/service-id: P1MCPZK
     github.com/project-slug: harness/harness-core
+    grafana/dashboard-selectors:
+      - "folderUrl == 'https://<grafana-url>/dashboards/f/1z0BEDzIk/system_health'"
+      - "folderUrl == 'https://<grafana-url>/dashboards/f/VUX4mTqVk/platform'" 
+    grafana/overview-dashboard:
+      - 'http://grafana/d/mToVpMeVk/microservices-health-dashboard?orgId=1'
+      - 'http://grafana/d/n5w7gA94k/perpetual-tasks?orgId=1'
+      - 'http://grafana/d/y5I3FbrVk/delegates-summary?orgId=1'
+      - 'http://grafana/d/Xus3WJr4z/delegate-tasks?orgId=1'
